@@ -1,23 +1,18 @@
 <?php
 
-/**
- * Geo Code
- * Extension for Contao Open Source CMS (contao.org)
+/*
+ * Copyright (c) 2017 Heimrich & Hannot GmbH
  *
- * Copyright (c) 2014 de la Haye
- *
- * @package dlh_geocode
- * @author  Christian de la Haye
- * @link    http://delahaye.de
- * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ * @license LGPL-3.0+
  */
 
-
 /**
- * Register the classes
+ * Register the classes.
  */
-ClassLoader::addClasses(array
-(
+ClassLoader::addClasses([
     // Classes
     'delahaye\GeoCode' => 'system/modules/dlh_geocode/classes/GeoCode.php',
-));
+
+    // Models
+    'delahaye\GeoCodeModel' => 'system/modules/dlh_geocode/models/GeoCodeModel.php',
+]);

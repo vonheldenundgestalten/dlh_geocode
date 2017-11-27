@@ -1,43 +1,49 @@
 {
-    "name": "heimrichhannot/dlh_geocode",
-    "description":"Get geo coordinates from a given address",
-    "keywords":["contao", "geo", "googlemaps"],
-    "type": "contao-module",
-    "homepage":"https://github.com/heimrichhannot/dlh_geocode",
-    "license":"LGPL-3.0+",
-    "authors":[
-        {
-            "name":"Christian de la Haye",
-            "email":"service@delahaye.de",
-            "homepage":"http://www.delahaye.de",
-            "role":"Developer"
-        },
-	{
-            "name":"Heimrich & Hannot GmbH",
-            "email":"digitales@heimrich-hannot.de",
-            "homepage":"http://heimrich-hannot.de",
-            "role":"Developer"
-        }
-    ],
-    "support":{
-        "issues":"https://github.com/heimrichhannot/dlh_geocode/issues"
+  "name": "heimrichhannot/dlh_geocode",
+  "description": "Get geo coordinates from a given address",
+  "keywords": [
+    "contao",
+    "geo",
+    "googlemaps"
+  ],
+  "type": "contao-module",
+  "homepage": "https://github.com/heimrichhannot/dlh_geocode",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Christian de la Haye",
+      "email": "service@delahaye.de",
+      "homepage": "http://www.delahaye.de",
+      "role": "Developer"
     },
-    "require": {
-        "php": ">=5.6.0",
-	"contao/core-bundle": "^3.5.1 || ~4.1",
-	"contao-community-alliance/composer-plugin": "3.*"
-    },
-    "autoload": {
-        "classmap": [""]
-    },
-    "replace": {
-        "contao-legacy/dlh_geocode": "*"
-    },
-    "extra": {
-        "contao": {
-            "sources": {
-                "": "system/modules/dlh_geocode"
-            }
-        }
+    {
+      "name": "Heimrich & Hannot GmbH",
+      "email": "digitales@heimrich-hannot.de",
+      "homepage": "http://heimrich-hannot.de",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/heimrichhannot/dlh_geocode/issues"
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "contao/core-bundle": "^3.5.1 || ~4.1",
+    "contao-community-alliance/composer-plugin": "3.*"
+  },
+  "autoload": {
+    "classmap": [
+      ""
+    ]
+  },
+  "replace": {
+    "contao-legacy/dlh_geocode": "*"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/dlh_geocode"
+      }
+    }
+  }
 }
