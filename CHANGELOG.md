@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2017-07-18
+
+### Fixed
+- contao 3 requires `contao-community-alliance/composer-plugin` in version `~2.4`
+
 ## [1.1.1] - 2017-07-18
 
 ### Added
