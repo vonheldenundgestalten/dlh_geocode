@@ -37,7 +37,8 @@
     ]
   },
   "replace": {
-    "contao-legacy/dlh_geocode": "*"
+    "contao-legacy/dlh_geocode": "*",
+    "delahaye/dlh_geocode": "*"
   },
   "extra": {
     "contao": {

@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.3] - 2017-07-18
+
+### Changed
+- replace `delahaye/dlh_geocode` with this package
+
 ## [1.1.2] - 2017-07-18
 
 ### Fixed
