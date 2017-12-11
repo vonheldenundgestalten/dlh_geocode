@@ -49,13 +49,13 @@ $GLOBALS['TL_DCA']['tl_dlh_geocode'] = [
             'delete' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_dlh_geocode']['delete'],
                 'href' => 'act=delete',
-                'icon' => 'delete.svg',
+                'icon' => 'delete.gif',
                 'attributes' => 'onclick="if(!confirm(\''.$GLOBALS['TL_LANG']['MSC']['deleteConfirm'].'\'))return false;Backend.getScrollOffset()"',
             ],
             'show' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_dlh_geocode']['show'],
                 'href' => 'act=show',
-                'icon' => 'show.svg',
+                'icon' => 'show.gif',
             ],
         ],
     ],

@@ -1,12 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.1.3] - 2017-07-18
+## [1.1.4] - 2017-12-11
+
+### Fixed
+- show and delete icons in contao 3, could not handle svg
+
+## [1.1.3] - 2017-12-11
 
 ### Changed
 - replace `delahaye/dlh_geocode` with this package
 
-## [1.1.2] - 2017-07-18
+## [1.1.2] - 2017-12-11
 
 ### Fixed
 - contao 3 requires `contao-community-alliance/composer-plugin` in version `~2.4`
