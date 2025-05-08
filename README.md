@@ -6,7 +6,7 @@ Copyright (c) 2014 de la Haye
 
 ---
 
-This Version is compatible with Contao 3 & 4
+This Version is compatible with Contao 4 & 5
 
 **Requires a valid (Google Maps API key)[https://console.developers.google.com/apis] that can be configured within contao system settings.**
 
