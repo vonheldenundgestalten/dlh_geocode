@@ -16,7 +16,7 @@ $GLOBALS['dlh_geocode']['address'] = array(
 	'field_geocode'     => 'coords_%s'
 	);
 
-$GLOBALS['TL_DCA']['mm_TABLENAME']['fields']['COORDSFIELD']['save_callback'][] = array('delahaye\GeoCode','callbackCoordinates');
+$GLOBALS['TL_DCA']['mm_TABLENAME']['fields']['COORDSFIELD']['save_callback'][] = array('VHUG\DlhGoogleMapsBundle\GeoCode','callbackCoordinates');
 ```
 
 - format : like sprintf() for the address to search for

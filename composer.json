@@ -1,55 +1,63 @@
 {
-  "name": "vonheldenundgestalten/dlh_geocode",
-  "description": "Get geo coordinates from a given address",
-  "keywords": [
-    "contao",
-    "geo",
-    "googlemaps"
-  ],
-  "type": "contao-module",
-  "homepage": "https://github.com/vonheldenundgestalten/dlh_geocode",
-  "license": "LGPL-3.0+",
-  "authors": [
-    {
-      "name": "Christian de la Haye",
-      "email": "service@delahaye.de",
-      "homepage": "http://www.delahaye.de",
-      "role": "Developer"
+    "name": "vonheldenundgestalten/dlh_geocode",
+    "description": "Get geo coordinates from a given address",
+    "keywords": [
+        "contao",
+        "geo",
+        "googlemaps"
+    ],
+    "type": "contao-module",
+    "homepage": "https://github.com/vonheldenundgestalten/dlh_geocode",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Christian de la Haye",
+            "email": "service@delahaye.de",
+            "homepage": "http://www.delahaye.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Heimrich & Hannot GmbH",
+            "email": "digitales@heimrich-hannot.de",
+            "homepage": "http://heimrich-hannot.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Miroslav Horvatov",
+            "email": "miroslav.horvatov@vhug.de",
+            "homepage": "https://vonheldenundgestalten.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/vonheldenundgestalten/dlh_geocode/issues"
     },
-    {
-      "name": "Heimrich & Hannot GmbH",
-      "email": "digitales@heimrich-hannot.de",
-      "homepage": "http://heimrich-hannot.de",
-      "role": "Developer"
+    "require": {
+        "php": "^8.0",
+        "contao/core-bundle": "~4.1 || 5.3.*"
     },
-    {
-      "name": "Miroslav Horvatov",
-      "email": "miroslav.horvatov@vhug.de",
-      "homepage": "https://vonheldenundgestalten.de",
-      "role": "Developer"
+    "autoload": {
+        "psr-4": {
+            "VHUG\\DlhGoogleMapsBundle\\": "src/"
+        },
+        "classmap": [
+            "contao/"
+        ],
+        "exclude-from-classmap": [
+            "contao/config/",
+            "contao/dca/",
+            "contao/languages/",
+            "contao/templates/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "contao/manager-plugin": true,
+            "php-http/discovery": false
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "VHUG\\DlhGoogleMapsBundle\\ContaoManager\\Plugin"
     }
-  ],
-  "support": {
-    "issues": "https://github.com/vonheldenundgestalten/dlh_geocode/issues"
-  },
-  "require": {
-    "php": ">=5.6.0",
-    "contao/core-bundle": "~4.1 || 5.3.*"
-  },
-  "autoload": {
-    "classmap": [
-      ""
-    ]
-  },
-  "replace": {
-    "contao-legacy/dlh_geocode": "*",
-    "delahaye/dlh_geocode": "*"
-  },
-  "extra": {
-    "contao": {
-      "sources": {
-        "": "system/modules/dlh_geocode"
-      }
-    }
-  }
 }

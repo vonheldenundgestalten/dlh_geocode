@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2017 Heimrich & Hannot GmbH
+ * Copyright (c) 2025 Von Helden Und Gestalten GmbH
  *
  * @license LGPL-3.0+
  */

@@ -1,13 +1,15 @@
 <?php
 
+
 /*
- * Copyright (c) 2017 Heimrich & Hannot GmbH
+ * Copyright (c) 2025 Von Helden Und Gestalten GmbH
  *
  * @license LGPL-3.0+
  */
 
-namespace delahaye;
+namespace VHUG\DlhGoogleMapsBundle;
 
+use Contao\Model;
 /**
  * Reads and writes news.
  *
@@ -54,7 +56,7 @@ namespace delahaye;
  * @method static integer countByBounds($val, array $opt = [])
  * @method static integer countByRaw($val, array $opt = [])
  */
-class GeoCodeModel extends \Contao\Model
+class GeoCodeModel extends Model
 {
     protected static $strTable = 'tl_dlh_geocode';
 
@@ -67,7 +69,7 @@ class GeoCodeModel extends \Contao\Model
      * @param string $bounds   The bounding box of the viewport within which to bias geocode results more prominently (top left lat & lon|bottom right lat & lon, e.g. 34.172684,-118.604794|34.236144,-118.500938)
      * @param array  $options  Additional query options
      *
-     * @return \Contao\Model\Collection|\delahaye\GeoCodeModel[]|\delahaye\GeoCodeModel|null A collection of models or null if there are no geo information for the given address
+     * @return \Contao\Model\Collection|\VHUG\DlhGoogleMapsBundle\GeoCodeModel[]|\VHUG\DlhGoogleMapsBundle\GeoCodeModel|null A collection of models or null if there are no geo information for the given address
      */
     public static function findByAddress(string $address, string $region = 'de', string $language = 'de', string $bounds = '', array $options = [])
     {

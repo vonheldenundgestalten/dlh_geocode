@@ -1,7 +1,10 @@
 <?php
-
+use Contao\DC_Table;
+use Contoa\Date;
+use Contao\Config;
+use Contao\Backend;
 /*
- * Copyright (c) 2017 Heimrich & Hannot GmbH
+ * Copyright (c) 2025 Von Helden Und Gestalten GmbH
  *
  * @license LGPL-3.0+
  */
@@ -12,7 +15,7 @@
 $GLOBALS['TL_DCA']['tl_dlh_geocode'] = [
     // Config
     'config' => [
-        'dataContainer' => 'Table',
+        'dataContainer' => DC_Table::class,
         'closed' => true,
         'notEditable' => true,
         'notCopyable' => true,
@@ -128,7 +131,7 @@ class tl_dlh_geocode extends Backend
 
         return '<div class="ellipsis">'.sprintf(
                 '%s, %s <span style="color:#999;padding-right:3px">[%s]</span>',
-                $row['address'], $country, \Date::parse(\Config::get('datimFormat'), $row['tstamp'])
+                $row['address'], $country, Date::parse(Config::get('datimFormat'), $row['tstamp'])
             ).'</div>';
     }
 }

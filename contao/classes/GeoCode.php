@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2017 Heimrich & Hannot GmbH
+ * Copyright (c) 2025 Von Helden Und Gestalten GmbH
  *
  * @license LGPL-3.0+
  */
@@ -10,7 +10,7 @@
  * Run in a custom namespace, so the class can be replaced.
  */
 
-namespace delahaye;
+namespace VHUG\DlhGoogleMapsBundle;
 
 /**
  * Class GeoCode.
