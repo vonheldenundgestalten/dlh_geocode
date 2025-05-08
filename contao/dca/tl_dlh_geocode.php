@@ -115,7 +115,7 @@ $GLOBALS['TL_DCA']['tl_dlh_geocode'] = [
     ],
 ];
 
-class tl_dlh_geocode extends Backend
+class tl_dlh_geocode
 {
     /**
      * Generate the entries label.
@@ -127,7 +127,7 @@ class tl_dlh_geocode extends Backend
      */
     public function generateLabel($row, $label)
     {
-        $country = \System::getCountries()[$row['region']];
+        $country = System::getCountries()[$row['region']];
 
         return '<div class="ellipsis">'.sprintf(
                 '%s, %s <span style="color:#999;padding-right:3px">[%s]</span>',
