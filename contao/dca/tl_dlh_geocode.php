@@ -115,7 +115,7 @@ $GLOBALS['TL_DCA']['tl_dlh_geocode'] = [
     ],
 ];
 
-class tl_dlh_geocode
+class tl_dlh_geocode extends Backend
 {
     /**
      * Generate the entries label.
