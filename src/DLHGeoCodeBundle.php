@@ -10,12 +10,12 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace VHUG\DlhGoogleMapsBundle;
+namespace VHUG\DLHGeoCodeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 
-class DlhGoogleMapsBundle extends Bundle
+class DLHGeoCodeBundle extends Bundle
 {
     public function getPath(): string
     {

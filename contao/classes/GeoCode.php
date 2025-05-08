@@ -10,7 +10,7 @@
  * Run in a custom namespace, so the class can be replaced.
  */
 
-namespace VHUG\DlhGoogleMapsBundle;
+namespace VHUG\DLHGeoCodeBundle;
 
 /**
  * Class GeoCode.

@@ -38,7 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VHUG\\DlhGoogleMapsBundle\\": "src/"
+            "VHUG\\DLHGeoCodeBundle\\": "src/"
         },
         "classmap": [
             "contao/"
@@ -58,6 +58,6 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "VHUG\\DlhGoogleMapsBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "VHUG\\DLHGeoCodeBundle\\ContaoManager\\Plugin"
     }
 }

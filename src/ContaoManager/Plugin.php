@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace VHUG\DlhGoogleMapsBundle\ContaoManager;
+namespace VHUG\DLHGeoCodeBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
-use VHUG\DlhGoogleMapsBundle\DlhGoogleMapsBundle;
+use VHUG\DLHGeoCodeBundle\DLHGeoCodeBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
@@ -28,7 +28,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(DlhGoogleMapsBundle::class)
+            BundleConfig::create(DLHGeoCodeBundle::class)
             ->setLoadAfter([
                 ContaoCoreBundle::class,
             ])

@@ -7,7 +7,7 @@
  * @license LGPL-3.0+
  */
 
-namespace VHUG\DlhGoogleMapsBundle;
+namespace VHUG\DLHGeoCodeBundle;
 
 use Contao\Model;
 /**
@@ -69,7 +69,7 @@ class GeoCodeModel extends Model
      * @param string $bounds   The bounding box of the viewport within which to bias geocode results more prominently (top left lat & lon|bottom right lat & lon, e.g. 34.172684,-118.604794|34.236144,-118.500938)
      * @param array  $options  Additional query options
      *
-     * @return \Contao\Model\Collection|\VHUG\DlhGoogleMapsBundle\GeoCodeModel[]|\VHUG\DlhGoogleMapsBundle\GeoCodeModel|null A collection of models or null if there are no geo information for the given address
+     * @return \Contao\Model\Collection|\VHUG\DLHGeoCodeBundle\GeoCodeModel[]|\VHUG\DLHGeoCodeBundle\GeoCodeModel|null A collection of models or null if there are no geo information for the given address
      */
     public static function findByAddress(string $address, string $region = 'de', string $language = 'de', string $bounds = '', array $options = [])
     {
